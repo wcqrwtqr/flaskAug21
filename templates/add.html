@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div class="callout">
+	<h1>Add new asset</h1>
+	<p>Add new asset</p>
+	<form method="POST">
+		{{form.hidden_tag()}}
+		{{form.type.label}}{{form.type()}}
+		{{form.asset_number.label}}{{form.asset_number()}}
+		{{form.serial_number.label}}{{form.serial_number()}}
+		{{form.BL.label}}{{form.BL()}}
+		{{form.BU.label}}{{form.BU()}}
+		{{form.cost.label}}{{form.cost()}}
+		{{form.submit()}}
+	</form>
+</div>
+
+{%endblock%}
+

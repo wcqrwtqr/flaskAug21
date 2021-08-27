@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{%block title%}Asset List{%endblock%} 
+
+{%block content%}
+<h1>List</h1>
+
+{%for aset in asset%}
+<p>{{ aset }}</p>
+{%endfor%}
+
+{%endblock%}
